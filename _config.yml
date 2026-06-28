@@ -43,6 +43,8 @@ render_drafts: false
 post_asset_folder: false
 relative_link: false
 future: true
+# 代码高亮配置
+# 使用 Hexo 内置的 highlight.js 进行代码高亮
 syntax_highlighter: highlight.js
 highlight:
   line_number: true
@@ -50,10 +52,10 @@ highlight:
   tab_replace: ''
   wrap: true
   hljs: false
+
+# 关闭 prismjs（使用 highlight.js）
 prismjs:
-  preprocess: true
-  line_number: true
-  tab_replace: ''
+  enable: false
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -109,13 +111,6 @@ server:
   hostname: 0.0.0.0
   compress: true
   cache: false
-  
-# prism 代码高亮配置
-prism_plugin:
-  mode: 'preprocess'
-  theme: 'default'
-  line_number: true
-  custom_css: ''
 
 # 百度主动推送配置
 baidu_url_submit:

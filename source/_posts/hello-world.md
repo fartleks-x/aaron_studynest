@@ -1,38 +1,18 @@
 ---
-title: Hello World
+title: 插件功能测试：代码高亮+全站搜索验证
+date: 2026-06-28 21:00:00
+tags: [Hexo, 建站, 插件测试]
+categories: [技术笔记]
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
-## Quick Start
+# 一、测试Prism代码高亮功能
+## Python示例代码
+```python
+# AI副业小脚本：批量打印学习记录
+def study_record():
+    study_list = ["Python基础", "RAG知识库实战", "Hexo个人博客搭建"]
+    for item in study_list:
+        print(f"今日学习内容：{item}")
 
-### Create a new post
-
-``` bash
-$ hexo new "My New Post"
-```
-
-More info: [Writing](https://hexo.io/docs/writing.html)
-
-### Run server
-
-``` bash
-$ hexo server
-```
-
-More info: [Server](https://hexo.io/docs/server.html)
-
-### Generate static files
-
-``` bash
-$ hexo generate
-```
-
-More info: [Generating](https://hexo.io/docs/generating.html)
-
-### Deploy to remote sites
-
-``` bash
-$ hexo deploy
-```
-
-More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
+if __name__ == "__main__":
+    study_record()
