@@ -1,0 +1,95 @@
+# Icarus 主题配置
+# 文档: https://ppoffice.github.io/hexo-theme-icarus/tags/configuration/
+
+version: 6.1.1
+
+# 站点Logo和头像
+logo: /img/logo.svg
+avatar:
+  url: /img/avatar.png
+  rounded: true
+
+# 导航栏
+navbar:
+  menu:
+    首页: /
+    归档: /archives
+    分类: /categories
+    标签: /tags
+    关于: /about
+
+# 站点页脚
+footer:
+  links:
+    Creative Commons:
+      icon: fab fa-creative-commons
+      url: https://creativecommons.org/
+    Attribution 4.0 International:
+      icon: fab fa-creative-commons-by
+      url: https://creativecommons.org/licenses/by/4.0/
+    Share Alike:
+      icon: fab fa-creative-commons-sa
+      url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+# 文章配置
+article:
+  highlight:
+    theme: atom-one-light
+    clipboard: true
+    fold: unfolded
+  readtime: true
+  licenses:
+    CC BY-NC-SA 4.0: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+# 搜索功能
+search:
+  type: insight
+
+# 评论系统（暂不启用，设置为null表示禁用）
+comment:
+
+# 侧边栏配置
+sidebar:
+  left:
+    sticky: false
+  right:
+    sticky: true
+
+# 侧边栏小部件
+widgets:
+  -
+    position: left
+    type: profile
+    author: Aaron
+    author_title: 学习与成长
+    location: 中国
+    avatar: /img/avatar.png
+    rounded: true
+    social_links:
+      Github:
+        icon: fab fa-github
+        url: https://github.com/fartleks-x
+  -
+    position: right
+    type: toc
+    index: true
+    collapsed: true
+    depth: 3
+  -
+    position: right
+    type: categories
+  -
+    position: right
+    type: recent_posts
+  -
+    position: right
+    type: archives
+  -
+    position: right
+    type: tags
+
+# CDN配置（使用本地资源）
+providers:
+  cdn: jsdelivr
+  fontcdn: google
+  iconcdn: fontawesome

@@ -6,3 +6,11 @@ node_modules/
 public/
 .deploy*/
 _multiconfig.yml
+
+# 不再使用的主题
+themes/matery/
+
+# 备份文件
+_config.backup.yml
+_config.matery.yml
+themes/butterfly/_config.backup.yml
