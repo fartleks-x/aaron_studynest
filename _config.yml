@@ -109,3 +109,17 @@ server:
   hostname: 0.0.0.0
   compress: true
   cache: false
+  
+# prism 代码高亮配置
+prism_plugin:
+  mode: 'preprocess'
+  theme: 'default'
+  line_number: true
+  custom_css: ''
+
+# 百度主动推送配置
+baidu_url_submit:
+  count: 10
+  host: ""
+  token: ""
+  enable: false
